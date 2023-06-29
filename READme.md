@@ -22,4 +22,21 @@ The "Delete" button acts only on id, so insert id you want to delete and push th
 2. PostgreSQL and make a new Database with table patients and 4 columns (id "serial", name"varchar",age"int",address"varchar").
 
 ## Build Steps
-make sure to configure the connection string on the MainWindow.xaml.cs, check SQL queries with your database table and columns and you are good to go.
+1. make sure to configure the connection string on the MainWindow.xaml.cs, check SQL queries with your database table and columns.
+
+  ```
+public NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Username=<username>;Password=<password>;Database=<dbname>;");
+
+```
+```
+where <username> is postgres server user name (default is postgres)
+
+<password> is postgres server password
+
+<dbname> is database name
+```
+3. in the folder that contains ,csproj file open new command prompt and enter the following code
+
+```
+dotnet run
+```
