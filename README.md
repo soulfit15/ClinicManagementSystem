@@ -20,4 +20,6 @@ password is psql server password, databasename is the name of the database
 4. Build and run
 
 ## What I couldn't do
-I wanted the datagrid to control the entries to the SQL Database, but I was Sadly unable, but I will keep tinkering to get to it 
+~~I wanted the datagrid to control the entries to the SQL Database, but I was Sadly unable, but I will keep tinkering to get to it~~ 
+I was successful in doing it by using the 
+``` var selectedRow = (DataGrid.SelectedItem as DataRowView).Row; string patientid = selectedRow.ToString(); ```
